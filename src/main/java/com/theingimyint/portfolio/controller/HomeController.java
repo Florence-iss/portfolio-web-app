@@ -1,4 +1,4 @@
-package com.theingimyint.portfolio.Controllers;
+package com.theingimyint.portfolio.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

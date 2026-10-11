@@ -1,4 +1,4 @@
-package com.theingimyint.portfolio.Model;
+package com.theingimyint.portfolio.model;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.theingimyint.portfolio.Controllers;
+package com.theingimyint.portfolio.controller;
 
-import com.theingimyint.portfolio.Model.Project;
+import com.theingimyint.portfolio.model.Project;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
