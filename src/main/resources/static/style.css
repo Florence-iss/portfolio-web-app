@@ -1,0 +1,88 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f7f8fa;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: #ffffff;
+    border-bottom: 1px solid #e4e7eb;
+}
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2933;
+    text-decoration: none;
+}
+.nav-links a {
+    margin-left: 24px;
+    color: #52606d;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover { color: #2563eb; }
+.nav-links a.active {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 4px;
+}
+
+/* Page layout */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+.page-title { font-size: 32px; margin-bottom: 8px; }
+.page-subtitle { color: #52606d; margin-bottom: 32px; }
+
+/* Project cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+.card {
+    background: #ffffff;
+    border: 1px solid #e4e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    transition: box-shadow 0.2s;
+}
+.card:hover { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); }
+.card h2 { font-size: 20px; margin-bottom: 8px; }
+.card p { color: #52606d; font-size: 15px; margin-bottom: 16px; }
+
+/* Skill tags */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+    background: #eff4ff;
+    color: #1d4ed8;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+/* Home hero */
+.hero h1 { font-size: 40px; margin-bottom: 8px; }
+.hero p { font-size: 18px; color: #52606d; margin-bottom: 24px; }
+.button {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.button:hover { background: #1d4ed8; }

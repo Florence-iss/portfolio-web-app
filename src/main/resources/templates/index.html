@@ -2,10 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theingi Myint | Portfolio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<h1>Hi, I'm <span th:text="${name}">placeholder</span></h1>
-<p>Backend developer — Java & Spring Boot</p>
+<div th:replace="~{fragments/navbar :: navbar('home')}"></div>
+
+<main class="container hero">
+    <h1>Hi, I'm <span th:text="${name}">placeholder</span></h1>
+    <p>Backend developer — Java &amp; Spring Boot</p>
+    <a class="button" th:href="@{/projects}">See my projects</a>
+</main>
 </body>
 </html>

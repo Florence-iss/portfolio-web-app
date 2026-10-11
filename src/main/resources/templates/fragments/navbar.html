@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<nav class="navbar" th:fragment="navbar(active)">
+
+    <div class="nav-links">
+        <a th:href="@{/}" th:classappend="${active == 'home'} ? 'active'">Home</a>
+        <a th:href="@{/projects}" th:classappend="${active == 'projects'} ? 'active'">Projects</a>
+    </div>
+</nav>
+
+</body>
+</html>
