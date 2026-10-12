@@ -1,10 +1,11 @@
-package com.theingimyint.portfolio.service;
+package com.theingimyint.portfolio.serviceImpl;
 
 import com.theingimyint.portfolio.dto.ProjectDto;
 import com.theingimyint.portfolio.model.Project;
 import com.theingimyint.portfolio.model.Skill;
 import com.theingimyint.portfolio.model.Status;
 import com.theingimyint.portfolio.repository.ProjectRepository;
+import com.theingimyint.portfolio.service.ProjectService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
