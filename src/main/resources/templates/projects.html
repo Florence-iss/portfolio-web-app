@@ -15,8 +15,7 @@
 
     <section class="grid">
         <article class="card" th:each="project : ${projects}">
-            <h2 th:text="${project.title}">Project title</h2>
-            <p th:text="${project.summary}">Summary</p>
+            <h2><a class="card-link" th:href="@{/projects/{slug}(slug=${project.slug})}" th:text="${project.title}">Project title</a></h2>            <p th:text="${project.summary}">Summary</p>
             <div class="tags">
                 <span class="tag" th:each="skill : ${project.skills}" th:text="${skill}">Skill</span>
             </div>

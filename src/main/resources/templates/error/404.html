@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Not found</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar('')}"></div>
+
+<main class="container">
+    <h1 class="page-title">Page not found</h1>
+    <p class="page-subtitle" th:text="${message} ?: 'The page you are looking for does not exist.'">Message</p>
+    <a class="button" th:href="@{/projects}">Back to projects</a>
+</main>
+</body>
+</html>

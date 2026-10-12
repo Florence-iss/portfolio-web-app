@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${project.title} + ' | Theingi Myint'">Project</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar('projects')}"></div>
+
+<main class="container">
+    <a class="back-link" th:href="@{/projects}">← All projects</a>
+
+    <h1 class="page-title" th:text="${project.title}">Project title</h1>
+    <p class="page-subtitle" th:text="${project.summary}">Summary</p>
+
+    <div class="tags">
+        <span class="tag" th:each="skill : ${project.skills}" th:text="${skill}">Skill</span>
+    </div>
+
+    <section class="detail-body" th:if="${project.description != null}">
+        <p th:text="${project.description}">Description</p>
+    </section>
+
+    <div class="detail-links">
+        <a class="button" th:if="${project.githubUrl != null}" th:href="${project.githubUrl}" target="_blank">View code</a>
+        <a class="button" th:if="${project.demoUrl != null}" th:href="${project.demoUrl}" target="_blank">Live demo</a>
+    </div>
+</main>
+</body>
+</html>
