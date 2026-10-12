@@ -24,8 +24,8 @@
     </section>
 
     <div class="detail-links">
-        <a class="button" th:if="${project.githubUrl != null}" th:href="${project.githubUrl}" target="_blank">View code</a>
-        <a class="button" th:if="${project.demoUrl != null}" th:href="${project.demoUrl}" target="_blank">Live demo</a>
+        <a class="button" th:if="${project.githubUrl != null}" th:href="${project.githubUrl}" target="_blank" rel="noopener noreferrer">View code</a>
+        <a class="button" th:if="${project.demoUrl != null}" th:href="${project.demoUrl}" target="_blank" rel="noopener noreferrer">Live demo</a>
     </div>
 </main>
 </body>
